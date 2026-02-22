@@ -104,7 +104,9 @@ my<!DOCTYPE html>
     border: 4px solid white;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
-
+.hero p {
+    line-height: 1.6;
+}
 .hero-logo {
     width: 90px;
     height: auto;
@@ -114,7 +116,55 @@ my<!DOCTYPE html>
     max-width: 100%;
     height: auto;
 }
-               
+   .services {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #0A1F44;
+}
+
+.service-box {
+    background: white;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}  
+       .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .service-box {
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services .service-box {
+        width: 40%;
+    }
+}     
     </style>
 </head>
     
@@ -130,7 +180,7 @@ my<!DOCTYPE html>
         </h4>
         <p>Amatech Global Builders Limited</p>
     
-        <p>Company Registration No.9338393</p>
+        <p>RC:9338393</p>
         <p>Building Excellence Across Nigeria</p>
         <a href="#contact" class="btn">Request a Quote</a>
     </div>
